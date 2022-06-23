@@ -1,0 +1,85 @@
+.playerBattle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: $primaryBGShade;
+    padding: 15px 23px;
+    border-radius: 4px;
+    .teamName{
+        display: flex;
+
+        font-size: 12px;
+        align-items: center;
+        &>span{
+            max-width: 50px;
+            display: inline-block;
+        }
+        .teamShort{
+            background: $secondary;
+            border: 1px solid #3D65B3;
+            width: 26px;
+            height: 26px;
+            border-radius: 30px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            margin:0px 10px;
+        }
+    }
+  
+    .score{
+        background: $primaryBG;
+        border-radius: 4px;
+        padding: 10px;
+    }
+}
+
+
+.playerListBlock{
+    display: flex;
+    justify-content: space-between;
+    .player{
+        min-width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        img{
+            width: 46px;
+            height: 53px;
+            border: 1px solid #FFFFFF;
+            background-color: $white;
+            border-radius: 4px;
+            margin-left: 4px;
+        }
+        .detail{
+            p{
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 11px;
+                color: #FFFFFF;
+            }
+            span{
+                background: #024B5C;
+                border-radius: 14px;
+                padding: 2px 5px;
+                font-weight: 400;
+                font-size: 8px;
+            }
+        }
+        .score{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 17px;
+            color: $secondary;
+        }
+    }
+    .rightBlock{
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        padding-left: 15px;
+        .player{
+            flex-direction: row-reverse;
+        }
+    }
+}

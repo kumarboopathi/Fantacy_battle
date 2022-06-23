@@ -1,0 +1,45 @@
+.teamVs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    .team{
+        display: flex;
+        align-items: center;
+        margin: 10px 25px;
+        font-size: 12px;
+        line-height: 13px;
+        .image{
+            margin: 0px 10px;
+            background: $white;
+            padding: 2px;
+            border-radius: 30px;
+            width: 27px;
+            height: 27px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+         
+        }
+    }
+    .vs{
+        font-size: 12px;
+        line-height: 12px;
+        background: $primaryBGShade;
+        border-radius: 13px;
+        padding: 5px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 38px;
+            height: 1px;
+            position: absolute;
+            top: 9px;
+            left: -8px;
+            background: $primaryBGShade;
+            right: auto;
+            margin: auto;
+            z-index: -1;
+        }
+    }
+}

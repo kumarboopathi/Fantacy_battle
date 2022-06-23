@@ -1,0 +1,80 @@
+.playersSection{
+    background-color: rgba(2, 75, 92, 0.3);
+    border: 1px solid $primaryBGShade;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+    &.reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 12px;
+        .playerCard{
+            ul{
+                margin-bottom: 0px;
+                margin-top: 14px;
+            }
+        }
+        .playerInfo{
+            flex-direction: row-reverse;
+        }
+        .teamName{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            .teamShort{
+                margin-left: 0px !important;
+                margin-right: 10px;
+             }
+        }
+    
+    }
+   
+    .playerCard{
+       ul{
+           display: flex;
+           justify-content:space-between;
+           margin-bottom: 14px;
+           li{
+            width: 46px;
+            height: 53px;
+            background: $primaryBG;
+            border-radius: 5px;
+           }
+       } 
+    }
+    .playerInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftsec{
+            background: $primaryBGShade;
+            border-radius: 4px;
+            padding: 5px 12px;
+            color: $white;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+            span{
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        .teamName{
+            font-size: 12px;
+            span{
+
+            }
+            .teamShort{
+                background: $secondary;
+                border: 1px solid #3D65B3;
+                width: 26px;
+                height: 26px;
+                border-radius: 30px;
+                display: inline-block;
+                text-align: center;
+                line-height: 24px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
